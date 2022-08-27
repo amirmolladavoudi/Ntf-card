@@ -1,0 +1,131 @@
+* ::before ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --VerydarkbluecardBG: hsl(216, 50%, 16%);
+    --VerydarkblueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --myblue: rgb(0, 206, 228);
+}
+
+.my-body {
+    margin: auto !important;
+    background-color: var(--VerydarkbluemainBG);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.my-card {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--VerydarkbluecardBG);
+    margin-top: 100px;
+}
+
+.container {
+    position: relative;
+   
+}
+
+.my-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hover-img {
+    color: var(--Softblue) !important;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    opacity: 100%;
+}
+
+.overlay {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: var(--Cyan);
+}
+
+.container:hover .overlay {
+   opacity: 50%;
+}
+
+.overlay:hover  .hover-img {
+    opacity: 100%;
+}
+
+.para {
+    color: var(--White);
+    font-size: 18px;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.para:hover {
+    color: var(--Cyan);
+}
+
+@media screen {
+    .my-body {
+        max-width: 1440px;
+        min-width: 375px;
+    }
+}
+
+@font-face {
+    font-family: 'my-font';
+    src: url('webfonts/Cabin-VariableFont_wdth\,wght.ttf');
+}
+
+* {
+    font-family: 'my-font';
+}
+
+.secend-para {
+    opacity: 50%;
+    color: var(--White);
+    font-size: 16px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    color: var(--Cyan);
+    font-size: 16px;
+}
+
+.right {
+    color: var(--White);
+    font-size: 16px;
+    opacity: 50%;
+}
+
+.h-r {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    opacity: 50%;
+}
+
+.avatar {
+    height: 40px;
+    margin-right: 15px;
+}
